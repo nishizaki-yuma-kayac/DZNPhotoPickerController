@@ -116,6 +116,7 @@ static NSUInteger kDZNPhotoDisplayMinimumColumnCount = 4.0;
 {
     [super viewWillAppear:animated];
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     if (!self.metadataList) {
 
         if (self.searchBar.text.length > 0) {
